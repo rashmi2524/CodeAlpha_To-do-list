@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📋 Advanced To-Do List</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Task title" required />
+      <input type="date" id="due-date" />
+      <select id="priority">
+        <option value="low">Low 🔵</option>
+        <option value="medium">Medium 🟡</option>
+        <option value="high">High 🔴</option>
+      </select>
+      <select id="category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Others">Others</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div id="tasks-container">
+      <!-- Tasks will be categorized and displayed here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
